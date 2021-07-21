@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fuentes -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@100;300;400&family=Mate+SC&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- mi estilo -->
+    <link rel="stylesheet" href="01-css/-estiloCss.css">
+    <title>Contacto Clase11</title>
+    
+</head>
+<body>
+    <!--Menu Principal-->
+    <div class="total">
+    <header>
+        <p>Cosa de Santos</p>
+    </header>
+    <nav class="navP">
+      <ul class="navP__ul">
+        <li class="navP__li"><a class="navP__a" href="index.html">Inicio</a></li>
+        <li class="navP__li"><a class="navP__a" href="01servicios.html">Servicios</a></li>
+        <li class="navP__li"><a class="navP__a" href="02trabajos.html">Trabajos</a></li>
+        <li class="navP__li"><a class="navP__a" href="03trayectoria.html">Trayectoria</a></li>
+        <li class="navP__li"><a class="navP__a" href="04contacto.html">Contacto</a></li>
+      </ul>
+  </nav>
+    
+    <div class="container contenedorServicio">
+        <form class="row g-3" id="formularioConsulta">
+          <label for="tipoConsulta"> <h3>Quiero saber un poco mas sobre..</h3></label>
+          <select id="tipoConsulta" class="form-select" aria-label="Default select example">
+            <option selected>...</option>
+            <option value="1">Restauración - <small> Reparar,  una obra desgraciada</small></option>
+            <option value="2">Renovación - <small>Resigificar, dar un toque distinto, un nuevo aire</small></option>
+            <option value="3">Creacion - <small>Quiero una Imagen Personalizada.</small></option>
+          </select>
+          <br>
+          <div class="col-md-6">
+            <label for="Nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre">
+          </div>
+          <div class="col-md-6">
+            <label for="apellido" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="apellido">
+          </div>
+          
+          <div class="col-md-6">
+            <label for="ciudad" class="form-label">Ciudad</label>
+            <input type="text" class="form-control" id="ciudad">
+          </div>
+          <br>
+          <div class="col-md-6">
+            <label for="consultaFormulario">Deje aquí su consulta</label>
+            <textarea class="form-control" placeholder="Quisiera..." id="consultaFormulario"></textarea>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Enviar consulta</button>
+          </div>
+          </form>
+        </div>
+    <footer class="pie"> 
+      <p class="pie__texto">Algo en el footer, MarcaRegristradisima☻</p>
+    </footer>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html> 

@@ -1,0 +1,233 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Bitter', serif; }
+
+body {
+  width: 100%;
+  background-color: #fff3df; }
+
+header p {
+  font-family: 'Mate SC', serif;
+  font-size: 30px;
+  text-align: center;
+  color: black;
+  height: 80px;
+  padding-top: 12.5px; }
+
+p {
+  font-family: 'Bitter', serif;
+  font-size: 1rem;
+  text-align: center;
+  color: black; }
+
+.navP {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .navP__ul {
+    display: flex;
+    list-style: none;
+    font-size: 0;
+    height: 100%;
+    margin: 0;
+    padding: 0; }
+  .navP__li {
+    text-align: center; }
+  .navP__a {
+    text-decoration: none;
+    color: gold;
+    width: 100%;
+    height: 100%; }
+    .navP__a:hover {
+      color: #f2e6a5; }
+
+#sectionHome {
+  grid-area: contenidoHome;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; }
+
+.contenidoHome {
+  display: grid;
+  align-items: center;
+  justify-items: center; }
+
+.contenidoTrabajos {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-gap: 1rem; }
+
+#introTrabajos {
+  grid-area: introTrabajos; }
+
+.img {
+  width: auto;
+  height: auto;
+  filter: brightness(80%); }
+
+.imgtrabajo {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px #443c0d;
+  padding: 5px;
+  border: 1px solid rgba(115, 141, 160, 0.22);
+  background-color: white; }
+
+.img:hover {
+  filter: brightness(110%); }
+
+.test {
+  font-style: italic; }
+
+.img1 {
+  grid-area: img1; }
+
+.test1 {
+  grid-area: test1; }
+
+.img2 {
+  grid-area: img2; }
+
+.test2 {
+  grid-area: test2; }
+
+.img3 {
+  grid-area: img3; }
+
+.test3 {
+  grid-area: test3; }
+
+/* servicios- */
+#servicios {
+  margin-top: 12rem; }
+
+.contenidoServicios {
+  padding: 2rem auto; }
+
+.contenidoServicios h2 {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem; }
+
+.contenidoServicios h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 4rem; }
+
+.contenedorServicio {
+  height: 500px;
+  margin-bottom: 4rem; }
+
+/* fin servicios */
+#formularioConsulta {
+  flex-direction: column;
+  margin-top: 15%;
+  margin-bottom: 15%; }
+
+#tipoConsulta {
+  max-width: 300px;
+  max-height: 3rem; }
+
+#consultaFormulario {
+  min-height: 70px; }
+
+.pie {
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black; }
+  .pie__texto {
+    width: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    color: white;
+    text-shadow: 2px 2px 0% gold; }
+
+/* moviles pequeños */
+@media only screen and (max-width: 600px) {
+  header {
+    height: 150px; }
+  .navP {
+    align-items: center; }
+    .navP__ul {
+      flex-direction: column;
+      justify-content: space-evenly; }
+    .navP__li {
+      flex-basis: 25px;
+      font-size: 25px; }
+  .contenidoHome {
+    height: auto;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-areas: ". . ." ". contenidoHome ." ". . ."; }
+  .contenidoTrabajos {
+    margin: 5% 5% 5% 5%;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr repeat(3, 2fr 1fr);
+    grid-template-areas: "introTrabajos" "img1" "test1" "img2" "test2" "img3" "test3"; }
+  .test {
+    margin-bottom: 60px; }
+  .pie {
+    height: 150px; } }
+
+/* tablets )? */
+@media only screen and (min-width: 600px) {
+  header {
+    height: 100px; }
+  .navP__ul {
+    height: 60px;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center; }
+  .navP__li {
+    flex-basis: 100%;
+    font-size: 20px; }
+  .pie {
+    height: 120px; }
+  .contenidoHome {
+    height: 900px;
+    grid-template-columns: 1fr 9fr 1fr;
+    grid-template-rows: 1fr 9fr 1fr;
+    grid-template-areas: ". . ." ". contenidoHome ." ". . ."; }
+  #formularioConsulta {
+    margin-top: 15%;
+    margin-bottom: 15%;
+    margin-left: 20%; }
+  .contenidoTrabajos {
+    margin: 5% 10% 10% 5%;
+    height: 1400px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 2fr 2fr 2fr;
+    grid-template-areas: "introTrabajos introTrabajos" "img1 test1" "test2 img2" "img3 test3"; } }
+
+/* escritorios peque )? */
+@media only screen and (min-width: 796px) {
+  .navP__ul {
+    height: 50px;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 779px; }
+  .contenidoHome {
+    height: 750px;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas: ". . ." ". contenidoHome ." ". . ."; }
+  .contenidoTrabajos {
+    margin: 5% 15% 5% 15%;
+    height: 1400px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5fr 4fr 4fr 4fr;
+    grid-template-areas: "introTrabajos introTrabajos introTrabajos" "img1 test1 test1" "test2 test2 img2" "img3 test3 test3"; }
+  .pie {
+    height: 100px; } }
