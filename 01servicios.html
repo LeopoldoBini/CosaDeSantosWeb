@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Restauramos, renovamos y creamos obras de arte, nuestra especialidad es la escultura y la imaginería religiosa.">
     <!-- fuentes -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@100;300;400&family=Mate+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@100;300;400&family=Lakki+Reddy&family=Mate+SC&display=Eagle+Lake&family=Permanent+Marker&family=Tillana:wght@400;500;600&display=swap" rel="stylesheet">
+    
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <!-- animaciones -->
@@ -45,36 +47,33 @@
     <div class="contenedorServicio">
 
         
-        <section class="contenidoServicios" id="servicios">
+        <section class="contenidoServicios">
             <div class="container" >
-                <div class="text-center">
-                    <h2>NUESTROS SERVICIOS...</h2>
-                    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                <div class="text-center tituloServ">
+                    <h2>Nuestros Servicios,</h2>
+                    <h3 id="textoServ">Queremos ayudarte con...</h3>
                 </div>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Restauración</h4>
-                        <p class="text-muted">Reparar,  una obra desgraciada</p>
+                <div class="row text-center cajaSmadre">
+                    <div class="col-md-4 cajaS cajaS1">
+                        
+                        <img src="assets/svg/restauracionColor.svg" alt="esculpiendo" class="svg">
+                        <h4>Restauración</h4>
+                        <p>Reparar,  una obra desgraciada</p>
+                        <div class="fondo-hover text-center"></div>
                     </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Revitalización</h4>
-                        <p class="text-muted">Resigificar, dar un toque distinto, un nuevo aire a esa pieza que tiene un pedazo de tu corazón.</p>
+                    <div class="col-md-4 cajaS cajaS2">
+                       
+                        <img src="assets/svg/revitalizacionColor.svg" alt="Venus de nilo Renovada" class="svg">
+                        <h4>Revitalización</h4>
+                        <p>Retocar esa obra que tanto te gusta.</p>
+                        <div class="fondo-hover text-center"></div>
                     </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Creación</h4>
-                        <p class="text-muted">Quiero una Imagen Personalizada.</p>
+                    <div class="col-md-4 cajaS cajaS3">
+                        
+                        <img src="assets/svg/creacionColor.svg" alt="Creado Arte" class="svg">
+                        <h4>Creación</h4>
+                        <p>Imagenes personalizadas con la mejor calidad de la Rregión.</p>
+                        <div class="fondo-hover text-center"></div>
                     </div>
                 </div>
             </div>
@@ -83,10 +82,53 @@
 
     </div>
     
-    <footer class="pie"> 
-        <p class="pie__texto">Algo en el footer, MarcaRegristradisima☻</p>
-    </footer>
     </div>
+    <footer>
+        <div class="pie">
+
+            <div class="pie__caja">
+                <div class="pie__logo">
+                    <img src="Images/logo-magtimus.png" alt="">
+                </div>
+                <div class="pie__terms">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis a natus dolorem deserunt officia. Ipsum accusantium aliquam est. Commodi rem voluptatum vitae ad. Deserunt, ab amet harum commodi perspiciatis quos?</p>
+                </div>
+            </div>
+            <div class="pie__caja">
+                <h2>Soluciones</h2>
+                <a href="#">App Marketing</a>
+                <a href="#">App Desarrollo</a>
+                <a href="#">IOS Desarrollo</a>
+                <a href="#">Android Desarrollo</a>
+            </div>
+
+            <div class="pie__caja">
+                <h2>Compañia</h2>
+                <a href="#">Acerda de</a>
+                <a href="#">Trabajos</a>
+                <a href="#">Procesos</a>
+                <a href="#">Servicios</a>
+
+            </div>
+            <div class="pie__caja">
+                <h2>Redes Sociales</h2>
+                <a href="#"><i class="fab fa-facebook-square"></i> Facebook</a>
+                <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+                <a href="#"><i class="fab fa-twitter-square"></i>Twitter</a>
+                <a href="#"><i class="fab fa-linkedin"></i>LinkedIn</a>
+
+            </div>
+
+            
+
+        </div>
+
+        <div class="pie__copyright">
+            <hr>
+            <p>Todos los derechos reservados c 2021 <b>Magrimus Pro</b></p>
+            
+        </div>
+    </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
