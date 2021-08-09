@@ -295,7 +295,7 @@ footer{
 .pie{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     max-width: 1200px;
     margin: auto;
     margin-top: 50px
@@ -306,9 +306,14 @@ footer{
     padding: 40px;
 
 }
-
+.pie__logo{
+    text-align: center;    
+}
 .pie__caja .pie__logo img{
     width: 180px;
+    margin: auto;
+    transform: translateY(-20px);
+    
 }
 .pie__caja .pie__terms{
     max-width: 350px;
