@@ -144,24 +144,69 @@ p{
     align-items: center;
     justify-content: center;
 }
-.tituloServ{
+// Nube!
+#cloud:after {
+	width: 180px; height: 130px;
+	top: -50px; left: 60px;
+	border-radius: 100px;
+    border-top: solid 1px lightblue
+}
+
+#cloud:before {
+	width: 250px; height: 180px;
+	top: -70px; right: 50px;
+	border-radius: 200px;
+    border-top: solid 1px lightblue
+}
+#cloud:after, #cloud:before {
+	content: '';
+	position: absolute;
+	background: #FFF;
+	z-index: -1
+}
+#cloud {
+	width: 500px; height: 150px;
+    background: #BFF;
+	background: linear-gradient(top, lightblue 5%, #DFF 100%);
+	background: -webkit-linear-gradient(top, #FFF 1%, lightblue 100%);
+	background: -moz-linear-gradient(top, lightblue 5%, #DFF 100%);
+	background: -ms-linear-gradient(top, lightblue 5%, #DFF 100%);
+	background: -o-linear-gradient(top, lightblue 5%, #DFF 100%);
+	top: 0px; left: 0px;
+	border-radius: 100px;
+	position: relative;
+	margin: 120px auto 20px;
+    border-bottom: solid 3px black
     
-    color: white;
-    border-bottom: solid 3px black;
-    border-top: solid 5px black;
-    border-left: solid 3px $cFondo;
-    border-right: solid 3px $cFondo;
-    max-width: 500px;
-    margin: auto;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    background: rgb(162, 154, 139);
+}
+.shadow {
+	width: 350px;
+	position: absolute; bottom: -10px; 
+	background: #000;
+	z-index: -1;
+	box-shadow: 0 0 25px 8px rgba(0, 0, 0, 0.4);
+	border-radius: 50%;
+}
+// Fin Nube
+.tituloServ{
+        position: relative;
+//     color: white;
+//     border-bottom: solid 3px black;
+//     border-top: solid 5px black;
+//     border-left: solid 3px $cFondo;
+//     border-right: solid 3px $cFondo;
+//     max-width: 500px;
+//     margin: auto;
+//     padding-bottom: 10px;
+//     padding-top: 10px;
+//     background: rgb(162, 154, 139);
     // background: black;
-    }
+}
     h2{ 
     font-family: 'Permanent Marker', cursive;
     font-size: 2.5rem;
     margin-top: 0;
+    padding-top: 1.5rem;
     margin-bottom: 1rem;
     
     }
