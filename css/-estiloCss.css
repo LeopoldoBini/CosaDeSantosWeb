@@ -270,13 +270,17 @@ footer {
     font-size: 70px;
     color: #feba0b;
     text-align: start;
-    font-weight: 900; }
+    font-weight: 900;
+    padding-left: 30px;
+    margin-bottom: 50px;
+    letter-spacing: 5px; }
   #introTrabajos p {
     color: #373737;
     margin: auto;
     margin-top: 15px;
     text-align: start;
-    max-width: 1000px; }
+    max-width: 1200px;
+    line-height: 30px; }
 
 .img {
   width: auto;
