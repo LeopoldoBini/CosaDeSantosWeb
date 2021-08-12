@@ -264,7 +264,19 @@ footer {
   transition: all 300ms; }
 
 #introTrabajos {
-  grid-area: introTrabajos; }
+  grid-area: introTrabajos;
+  margin: auto 10%; }
+  #introTrabajos h2 {
+    font-size: 70px;
+    color: #feba0b;
+    text-align: start;
+    font-weight: 900; }
+  #introTrabajos p {
+    color: #373737;
+    margin: auto;
+    margin-top: 15px;
+    text-align: start;
+    max-width: 1000px; }
 
 .img {
   width: auto;
