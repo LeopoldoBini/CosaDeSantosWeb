@@ -574,7 +574,9 @@ footer {
     flex-direction: column;
     justify-content: space-evenly; }
   .contenedor__header__li {
-    margin: 20px 0px; } }
+    margin: 20px 0px; }
+  .portada__svg img {
+    opacity: 0; } }
 
 /* moviles pequeños */
 @media only screen and (max-width: 767px) {

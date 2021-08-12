@@ -8,7 +8,7 @@
 @import "seccionServicios";
 @import "seccionTrabajos";
 @import "seccionContacto";
-// Sólo para el Header
+// Sólo para el Header y svg home
 @media only screen and ( max-width: 900px){
 // Header
 .contenedor__header__contenedorNav{
@@ -37,6 +37,9 @@
 .contenedor__header__li{
     margin:  20px 0px;
     
+}
+.portada__svg img{
+    opacity: 0;
 }
 }
 /* moviles pequeños */
