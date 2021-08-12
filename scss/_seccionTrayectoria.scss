@@ -1,0 +1,52 @@
+.contenidoTrabajos{
+    max-width: 1200px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 1rem;
+    transition: all 300ms;
+}
+#introTrabajos{ 
+    grid-area: introTrabajos;
+    
+}
+.img{
+    width: auto;
+    height: auto;
+    filter: brightness(80%);
+    
+}
+.imgtrabajo{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgb(68, 60, 13);
+    padding: 5px;
+    border: 1px solid rgba(115, 141, 160, 0.22);
+    background-color: white;
+}
+.img:hover{
+    filter: brightness(110%);
+}
+.test{
+    font-style: italic;
+}
+.img1{
+    grid-area: img1;
+}
+.test1{
+    grid-area: test1;
+}
+.img2{
+    grid-area: img2;
+}
+.test2{
+    grid-area: test2;
+}
+.img3{
+    grid-area: img3;
+}
+.test3{
+    grid-area: test3;
+}

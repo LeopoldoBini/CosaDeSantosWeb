@@ -1,0 +1,36 @@
+#formularioConsulta{
+    flex-direction: column;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    h2{
+        font-size: 2.5rem;
+    }
+
+    label{
+        font-family: 'Tillana';
+    }
+    .consultaF{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    .boton{
+   
+    }
+    button{
+        border-radius: 20px;
+        margin: 20px 10px;
+        height: 60px;
+        font-size: 1.5rem;
+        font-family: 'Tillana';
+        font-weight: 600;
+        background: #359ef9;
+    }
+    
+}
+#tipoConsulta{
+    max-width: 300px;
+    max-height: 3rem;
+}
+#consultaFormulario{
+    min-height: 70px;
+}

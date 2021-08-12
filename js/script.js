@@ -2,11 +2,14 @@ window.onscroll = function (){
     scroll = document.documentElement.scrollTop;
 
     header = document.getElementById("header");
+    logo = document.getElementById("logoHeader");
 
     if(scroll > 20){
-        header.classList.add("apretar__nav")
+        header.classList.add("apretar__nav");
+        logo.classList.add("apretar__logo")
     }else if(scroll < 20){ 
-        header.classList.remove("apretar__nav")
+        header.classList.remove("apretar__nav");
+        logo.classList.remove("apretar__logo")
     }
 }
 

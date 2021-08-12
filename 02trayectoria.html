@@ -8,6 +8,7 @@
     <!-- fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@100;300;400&family=Lakki+Reddy&family=Mate+SC&display=Eagle+Lake&family=Permanent+Marker&family=Tillana:wght@400;500;600&display=swap" rel="stylesheet">
     <!-- Iconos -->
     <script src="https://kit.fontawesome.com/a8175c3701.js" crossorigin="anonymous"></script>
@@ -17,30 +18,44 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- mi estilo -->
     <link rel="stylesheet" href="css/-estiloCss.css">
-    <title>CosaDeSantos - Trabajos de Restauración</title>
+    <title>CosaDeSantos - Una historia de Restauración</title>
     
 </head>
 <body>
    
-    <div class="total">
-    <header>
-        <p>Cosa de Santos</p>
+    <header id="header">
+        <div class="contenedor__header">
+            <div class="contenedor__header__logo">
+                <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxjaXJjbGUgc3R5bGU9ImZpbGw6I0ZGQ0NBNjsiIGN4PSIyNTYiIGN5PSIyMTkuNjExIiByPSI4MS4zNDkiLz4NCjxwYXRoIHN0eWxlPSJmaWxsOiNERDNCMzE7IiBkPSJNMzUxLjAwMSwzNzEuMTM2SDE2MC45OTljLTQwLjk5NCwyOS41NC02Ny42ODcsNzcuNjg3LTY3LjY4NywxMzIuMDc0SDQxOC42OQ0KCUM0MTguNjksNDQ4LjgyMywzOTEuOTk1LDQwMC42NzYsMzUxLjAwMSwzNzEuMTM2eiIvPg0KPHBhdGggc3R5bGU9ImZpbGw6Izk5MUIxNzsiIGQ9Ik0yNTYsMzQwLjUyMWMtMzUuNDYzLDAtNjguMjcxLDExLjM1NC05NS4wMDEsMzAuNjE2TDI1Niw1MDMuMjFsOTUuMDAxLTEzMi4wNzQNCglDMzI0LjI3MSwzNTEuODc2LDI5MS40NjMsMzQwLjUyMSwyNTYsMzQwLjUyMXoiLz4NCjxwYXRoIHN0eWxlPSJmaWxsOiMyODBEMDU7IiBkPSJNOTQuMzYyLDI3Ny41MTRDNzguNTQ5LDI0OS42OTksNzAuMTksMjE3Ljk4OCw3MC4xOSwxODUuODFDNzAuMTksODMuMzU0LDE1My41NDQsMCwyNTYsMA0KCXMxODUuODEsODMuMzU0LDE4NS44MSwxODUuODFjMCwzMi4xNzgtOC4zNTgsNjMuODg5LTI0LjE3MSw5MS43MDNjLTE1LjMyOSwyNi45NjUtMzcuMzY4LDQ5Ljg3My02My43MzMsNjYuMjQ4DQoJYy00LjEyNSwyLjU2MS05LjU0MywxLjI5NC0xMi4xMDUtMi44MjljLTIuNTYxLTQuMTIzLTEuMjk0LTkuNTQzLDIuODI5LTEyLjEwNGM0OS44NDMtMzAuOTU3LDc5LjYtODQuNDIyLDc5LjYtMTQzLjAxOA0KCWMwLTkyLjc2MS03NS40NjgtMTY4LjIyOS0xNjguMjMtMTY4LjIyOVM4Ny43Nyw5My4wNDgsODcuNzcsMTg1LjgxYzAsNTguNTk3LDI5Ljc1OCwxMTIuMDYyLDc5LjYwMSwxNDMuMDE4DQoJYzQuMTIzLDIuNTYxLDUuMzksNy45ODEsMi44MjksMTIuMTA1Yy0xLjY2NSwyLjY4LTQuNTM3LDQuMTUzLTcuNDc2LDQuMTUzYy0xLjU4MiwwLTMuMTg1LTAuNDI3LTQuNjI5LTEuMzI0DQoJQzEzMS43MywzMjcuMzg3LDEwOS42OTEsMzA0LjQ3OCw5NC4zNjIsMjc3LjUxNHogTTM0Ni4xMzQsMjE5LjYxYzAsNDkuNy00MC40MzQsOTAuMTM1LTkwLjEzNCw5MC4xMzVzLTkwLjEzNC00MC40MzQtOTAuMTM0LTkwLjEzNQ0KCWMwLTQ5LjcsNDAuNDM0LTkwLjEzNCw5MC4xMzQtOTAuMTM0UzM0Ni4xMzQsMTY5LjkxLDM0Ni4xMzQsMjE5LjYxeiBNMzI4LjU1NSwyMTkuNjFjMC00MC4wMDctMzIuNTQ4LTcyLjU1NS03Mi41NTUtNzIuNTU1DQoJcy03Mi41NTUsMzIuNTQ3LTcyLjU1NSw3Mi41NTVzMzIuNTQ4LDcyLjU1Niw3Mi41NTUsNzIuNTU2UzMyOC41NTUsMjU5LjYxNywzMjguNTU1LDIxOS42MXogTTQyNy40NzksNTAzLjIxDQoJYzAsNC44NTQtMy45MzYsOC43OS04Ljc5LDguNzljLTQuODU0LDAtOC43OS0zLjkzNi04Ljc5LTguNzljMC00OC4yMDYtMjIuMjg1LTkxLjI5OS01Ny4wODctMTE5LjUzOWwtODkuNjc3LDEyNC42NzENCglDMjYxLjQ4NSw1MTAuNjM5LDI1OC44MjksNTEyLDI1Niw1MTJjLTIuODI5LDAtNS40ODQtMS4zNjEtNy4xMzYtMy42NThsLTg5LjY3Ny0xMjQuNjcxDQoJYy0zNC44MDIsMjguMjQtNTcuMDg3LDcxLjMzMy01Ny4wODcsMTE5LjUzOWMwLDQuODU0LTMuOTM0LDguNzktOC43OSw4Ljc5Yy00Ljg1NCwwLTguNzktMy45MzYtOC43OS04Ljc5DQoJYzAtNTYuOTA4LDI3Ljg3My0xMDcuNDIxLDcwLjY3Ni0xMzguNjNjMC4yMTktMC4xOTIsMC40NDgtMC4zNzcsMC42OS0wLjU1YzAuMTg0LTAuMTMyLDAuMzcyLTAuMjQ3LDAuNTYxLTAuMzYzDQoJYzI4LjA4Ni0yMC4wOTQsNjIuNDYyLTMxLjkzNSw5OS41NTItMzEuOTM1czcxLjQ2NiwxMS44NDEsOTkuNTUyLDMxLjkzNWMwLjE4OSwwLjExNSwwLjM3OSwwLjIzMSwwLjU2MSwwLjM2Mw0KCWMwLjI0MiwwLjE3NCwwLjQ3MSwwLjM1OCwwLjY5LDAuNTVDMzk5LjYwNiwzOTUuNzg5LDQyNy40NzksNDQ2LjMwMiw0MjcuNDc5LDUwMy4yMXogTTMzOC41NTgsMzczLjM4Mg0KCUMzMTQuNjg3LDM1OC4xNDgsMjg2LjM1NywzNDkuMzEsMjU2LDM0OS4zMXMtNTguNjg3LDguODM4LTgyLjU1OCwyNC4wNzJMMjU2LDQ4OC4xNThMMzM4LjU1OCwzNzMuMzgyeiIvPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" alt="" id="logoHeader">
+                <h1 class="contenedor__header__CDS">CosaDeSantos</h1>
+            </div>
+            <div class="contenedor__header__contenedorNav">
+                <nav class="contenedor__header__nav" id="nav">
+                    <ul class="contenedor__header__ul">
+                        <li class="contenedor__header__li"><a class= "select" href="index.html">Inicio</a></li>
+                        <li class="contenedor__header__li"><a href="01servicios.html">Servicios</a></li>
+                        <li class="contenedor__header__li"><a href="02trayectoria.html">Trayectoria</a></li> 
+                        <li class="contenedor__header__li"><a href="03trabajos.html">Trabajos</a></li>
+                        <li class="contenedor__header__li"><a href="04contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="btn__menu" id="btn_menu"><i class="fas fa-bars"></i></div>
+            </div>
+            
+            
+        </div>
+        
+        
     </header>
-    <nav class="navP">
-        <ul class="navP__ul">
-          <li class="navP__li"><a class="navP__a" href="index.html">Inicio</a></li>
-          <li class="navP__li"><a class="navP__a" href="01servicios.html">Servicios</a></li>
-          <li class="navP__li"><a class="navP__a" href="02trabajos.html">Trabajos</a></li>
-          <li class="navP__li"><a class="navP__a" href="03trayectoria.html">Trayectoria</a></li>
-          <li class="navP__li"><a class="navP__a" href="04contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
 
+    
+    <div class="contenedorDeTodo" id="contenedorDeTodo">
     <div class="contenidoTrabajos">
 
         
         <section id="introTrabajos">
-            <h1>Durante años..</h1>
+            <h2>Durante años..</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti ducimus laboriosam, sint vitae eos odio hic ipsam minima qui dignissimos voluptate soluta quasi reprehenderit quisquam facilis aliquid autem accusantium ratione!</p>
         </section>
         
@@ -69,7 +84,7 @@
     </div>
     
     
-    </div>
+    
     <footer>
         <div class="pie">
 
@@ -78,7 +93,7 @@
                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxjaXJjbGUgc3R5bGU9ImZpbGw6I0ZGQ0NBNjsiIGN4PSIyNTYiIGN5PSIyMTkuNjExIiByPSI4MS4zNDkiLz4NCjxwYXRoIHN0eWxlPSJmaWxsOiNERDNCMzE7IiBkPSJNMzUxLjAwMSwzNzEuMTM2SDE2MC45OTljLTQwLjk5NCwyOS41NC02Ny42ODcsNzcuNjg3LTY3LjY4NywxMzIuMDc0SDQxOC42OQ0KCUM0MTguNjksNDQ4LjgyMywzOTEuOTk1LDQwMC42NzYsMzUxLjAwMSwzNzEuMTM2eiIvPg0KPHBhdGggc3R5bGU9ImZpbGw6Izk5MUIxNzsiIGQ9Ik0yNTYsMzQwLjUyMWMtMzUuNDYzLDAtNjguMjcxLDExLjM1NC05NS4wMDEsMzAuNjE2TDI1Niw1MDMuMjFsOTUuMDAxLTEzMi4wNzQNCglDMzI0LjI3MSwzNTEuODc2LDI5MS40NjMsMzQwLjUyMSwyNTYsMzQwLjUyMXoiLz4NCjxwYXRoIHN0eWxlPSJmaWxsOiMyODBEMDU7IiBkPSJNOTQuMzYyLDI3Ny41MTRDNzguNTQ5LDI0OS42OTksNzAuMTksMjE3Ljk4OCw3MC4xOSwxODUuODFDNzAuMTksODMuMzU0LDE1My41NDQsMCwyNTYsMA0KCXMxODUuODEsODMuMzU0LDE4NS44MSwxODUuODFjMCwzMi4xNzgtOC4zNTgsNjMuODg5LTI0LjE3MSw5MS43MDNjLTE1LjMyOSwyNi45NjUtMzcuMzY4LDQ5Ljg3My02My43MzMsNjYuMjQ4DQoJYy00LjEyNSwyLjU2MS05LjU0MywxLjI5NC0xMi4xMDUtMi44MjljLTIuNTYxLTQuMTIzLTEuMjk0LTkuNTQzLDIuODI5LTEyLjEwNGM0OS44NDMtMzAuOTU3LDc5LjYtODQuNDIyLDc5LjYtMTQzLjAxOA0KCWMwLTkyLjc2MS03NS40NjgtMTY4LjIyOS0xNjguMjMtMTY4LjIyOVM4Ny43Nyw5My4wNDgsODcuNzcsMTg1LjgxYzAsNTguNTk3LDI5Ljc1OCwxMTIuMDYyLDc5LjYwMSwxNDMuMDE4DQoJYzQuMTIzLDIuNTYxLDUuMzksNy45ODEsMi44MjksMTIuMTA1Yy0xLjY2NSwyLjY4LTQuNTM3LDQuMTUzLTcuNDc2LDQuMTUzYy0xLjU4MiwwLTMuMTg1LTAuNDI3LTQuNjI5LTEuMzI0DQoJQzEzMS43MywzMjcuMzg3LDEwOS42OTEsMzA0LjQ3OCw5NC4zNjIsMjc3LjUxNHogTTM0Ni4xMzQsMjE5LjYxYzAsNDkuNy00MC40MzQsOTAuMTM1LTkwLjEzNCw5MC4xMzVzLTkwLjEzNC00MC40MzQtOTAuMTM0LTkwLjEzNQ0KCWMwLTQ5LjcsNDAuNDM0LTkwLjEzNCw5MC4xMzQtOTAuMTM0UzM0Ni4xMzQsMTY5LjkxLDM0Ni4xMzQsMjE5LjYxeiBNMzI4LjU1NSwyMTkuNjFjMC00MC4wMDctMzIuNTQ4LTcyLjU1NS03Mi41NTUtNzIuNTU1DQoJcy03Mi41NTUsMzIuNTQ3LTcyLjU1NSw3Mi41NTVzMzIuNTQ4LDcyLjU1Niw3Mi41NTUsNzIuNTU2UzMyOC41NTUsMjU5LjYxNywzMjguNTU1LDIxOS42MXogTTQyNy40NzksNTAzLjIxDQoJYzAsNC44NTQtMy45MzYsOC43OS04Ljc5LDguNzljLTQuODU0LDAtOC43OS0zLjkzNi04Ljc5LTguNzljMC00OC4yMDYtMjIuMjg1LTkxLjI5OS01Ny4wODctMTE5LjUzOWwtODkuNjc3LDEyNC42NzENCglDMjYxLjQ4NSw1MTAuNjM5LDI1OC44MjksNTEyLDI1Niw1MTJjLTIuODI5LDAtNS40ODQtMS4zNjEtNy4xMzYtMy42NThsLTg5LjY3Ny0xMjQuNjcxDQoJYy0zNC44MDIsMjguMjQtNTcuMDg3LDcxLjMzMy01Ny4wODcsMTE5LjUzOWMwLDQuODU0LTMuOTM0LDguNzktOC43OSw4Ljc5Yy00Ljg1NCwwLTguNzktMy45MzYtOC43OS04Ljc5DQoJYzAtNTYuOTA4LDI3Ljg3My0xMDcuNDIxLDcwLjY3Ni0xMzguNjNjMC4yMTktMC4xOTIsMC40NDgtMC4zNzcsMC42OS0wLjU1YzAuMTg0LTAuMTMyLDAuMzcyLTAuMjQ3LDAuNTYxLTAuMzYzDQoJYzI4LjA4Ni0yMC4wOTQsNjIuNDYyLTMxLjkzNSw5OS41NTItMzEuOTM1czcxLjQ2NiwxMS44NDEsOTkuNTUyLDMxLjkzNWMwLjE4OSwwLjExNSwwLjM3OSwwLjIzMSwwLjU2MSwwLjM2Mw0KCWMwLjI0MiwwLjE3NCwwLjQ3MSwwLjM1OCwwLjY5LDAuNTVDMzk5LjYwNiwzOTUuNzg5LDQyNy40NzksNDQ2LjMwMiw0MjcuNDc5LDUwMy4yMXogTTMzOC41NTgsMzczLjM4Mg0KCUMzMTQuNjg3LDM1OC4xNDgsMjg2LjM1NywzNDkuMzEsMjU2LDM0OS4zMXMtNTguNjg3LDguODM4LTgyLjU1OCwyNC4wNzJMMjU2LDQ4OC4xNThMMzM4LjU1OCwzNzMuMzgyeiIvPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" />
                 </div>
                 <div class="pie__terms">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis a natus dolorem deserunt officia. Ipsum accusantium aliquam est. Commodi rem voluptatum vitae ad. Deserunt, ab amet harum commodi perspiciatis quos?</p>
+                    <p>Nuestros servicios tienen un alcance a toda la region NOA (Jujuy, Salta, Catamarca, Tucumán, La Rioja y Santiago del Estero.) con traslado de Piezas y seguro incluido, consultar Resto del Pais. </p>
                 </div>
             </div>
            
@@ -86,8 +101,8 @@
             <div class="pie__caja">
                 <h2>Navegar</h2>
                 <a href="01servicios.html">Servicios</a>
-                <a href="02trabajos.html">Trabajos</a>
-                <a href="03trayectoria.html">Trayectoria</a>
+                <a href="02trayectoria.html">Trayectoria</a>
+                <a href="03trabajos.html">Trabajos</a>
                 <a href="04contacto.html">Contacto</a>
                 
             </div>
@@ -110,6 +125,8 @@
             
         </div>
     </footer>
+    </div> 
+    <script src="js/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

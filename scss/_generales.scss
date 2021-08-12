@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Bitter', serif;
+}
+
+body{
+    width: 100%;
+    background-color: $cFondo  ; //var -colores 
+
+}
+h2{ 
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.5rem;
+    filter: drop-shadow(-5px 5px 3px rgba(0, 0, 0, 0.2));
+}
+h3{
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Tillana',;
+    filter: drop-shadow(-5px 5px 3px rgba(0, 0, 0, 0.2))
+}
+p{
+    font-family: 'Bitter', serif; 
+    font-size: 1rem;
+    text-align: center;
+    color: $cLetraBase; //var -Colores
+  }
